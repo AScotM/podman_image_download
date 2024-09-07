@@ -1,0 +1,10 @@
+---
+- name: Download Podman Image
+  hosts: all
+
+  tasks:
+  - name: Pull image from registry
+    containers.podman.podman_image:
+      name: rockylinux:8  # Replace with the image name (e.g., nginx)
+      state: present
+
