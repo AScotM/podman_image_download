@@ -5,6 +5,6 @@
   tasks:
   - name: Pull image from registry
     containers.podman.podman_image:
-      name: rockylinux:9  # Replace with the image name (e.g., nginx)
+      name: rockylinux:10  # Replace with the image name (e.g., nginx)
       state: present
 
